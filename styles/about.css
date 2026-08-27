@@ -61,7 +61,7 @@
 .skill-tag:hover {
     border-color: var(--primary-color);
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.2);
+    box-shadow: 0 5px 15px rgb(59 130 246 / 20%);
 }
 
 /* Image Placeholder Styling */
@@ -75,14 +75,14 @@
 .about-image-placeholder {
     width: 400px;
     height: 450px;
-    background: linear-gradient(135deg, var(--card-bg), rgba(15, 23, 42, 0.9));
+    background: linear-gradient(135deg, var(--card-bg), rgb(15 23 42 / 90%));
     border: 1px solid var(--border-color);
     border-radius: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 6rem;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 40px rgb(0 0 0 / 30%);
     z-index: 2;
     backdrop-filter: blur(10px);
 }
@@ -100,13 +100,15 @@
     opacity: 0.6;
 }
 
-@media (max-width: 992px) {
+@media (width <= 992px) {
     .about-content {
         grid-template-columns: 1fr;
     }
+
     .page-container {
         padding: 4rem 2rem;
     }
+
     .about-image-placeholder {
         width: 100%;
         max-width: 400px;

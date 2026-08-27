@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Portfolio website",
   "scripts": {
-    "lint:html": "htmlhint \"**/*.html\"",
-    "lint:css": "stylelint \"css/**/*.css\""
+    "lint:html": "htmlhint \"src/**/*.html\"",
+    "lint:css": "stylelint \"styles/**/*.css\""
   },
   "devDependencies": {
     "htmlhint": "^1.1.4",
