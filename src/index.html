@@ -1,36 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio website for a digital designer and developer.">
     <title>Portfolio | Home</title>
-    <meta name="description" content="Welcome to my creative portfolio website.">
     <link rel="stylesheet" href="../styles/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Port<span>folio</span>.</a>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Home">Port<span>folio</span>.</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-    <main class="hero">
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
         <div class="hero-content">
-            <h1>Crafting Digital <span>Experiences</span></h1>
-            <p>I am a developer and designer specializing in building premium web applications that engage and inspire.</p>
-            <div class="cta-buttons">
-                <a href="projects.html" class="btn primary">View My Work</a>
-                <a href="contact.html" class="btn secondary">Get in Touch</a>
+          <p class="eyebrow">Developer • Designer • Problem Solver</p>
+          <h1 id="hero-title">Crafting Digital <span>Experiences</span></h1>
+          <p class="lead">
+            I build polished, user-first digital products that turn ideas into memorable experiences.
+            From thoughtful interfaces to scalable web experiences, I design and develop with clarity and purpose.
+          </p>
+          <div class="cta-buttons">
+            <a href="projects.html" class="btn primary">View My Work</a>
+            <a href="contact.html" class="btn secondary">Get in Touch</a>
+          </div>
+
+          <div class="mini-stats" aria-label="Key metrics">
+            <div class="stat-card">
+              <strong>5+</strong>
+              <span>Years Experience</span>
             </div>
+            <div class="stat-card">
+              <strong>18</strong>
+              <span>Projects Delivered</span>
+            </div>
+            <div class="stat-card">
+              <strong>96%</strong>
+              <span>Client Satisfaction</span>
+            </div>
+          </div>
         </div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
+
+        <div class="hero-panel" aria-label="Professional summary panel">
+          <div class="panel-card panel-top">
+            <p class="panel-label">Currently</p>
+            <h2>Available for select product and freelance work.</h2>
+          </div>
+
+          <div class="panel-card panel-bottom">
+            <div>
+              <p class="panel-label">Focus</p>
+              <ul class="focus-list">
+                <li>UI/UX Design</li>
+                <li>Frontend Development</li>
+                <li>Brand Experiences</li>
+              </ul>
+            </div>
+          </div>
         </div>
+
+        <div class="hero-shapes" aria-hidden="true">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+        </div>
+      </section>
+
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">What I do</p>
+          <h2 id="services-title">Design systems, product strategy, and conversion-driven experiences.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">01</div>
+            <h3>Product Design</h3>
+            <p>Clear, intuitive interfaces tailored to user needs and business goals.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">02</div>
+            <h3>Frontend Development</h3>
+            <p>Responsive, modern interfaces built with performance and accessibility in mind.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">03</div>
+            <h3>Brand Experience</h3>
+            <p>Visual storytelling that helps brands stand out and create stronger emotional connections.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="featured-work" id="featured-work" aria-labelledby="featured-title">
+        <div class="section-heading split-heading">
+          <div>
+            <p class="eyebrow">Featured work</p>
+            <h2 id="featured-title">Selected projects that balance creativity and business impact.</h2>
+          </div>
+          <a href="projects.html" class="text-link">See all projects</a>
+        </div>
+
+        <div class="projects-preview">
+          <article class="preview-card">
+            <div class="preview-visual preview-one" aria-hidden="true"></div>
+            <div class="preview-copy">
+              <p class="project-tag">E-commerce</p>
+              <h3>Retail Growth Platform</h3>
+              <p>Built a storefront and analytics experience that improved engagement and conversion rates.</p>
+            </div>
+          </article>
+
+          <article class="preview-card">
+            <div class="preview-visual preview-two" aria-hidden="true"></div>
+            <div class="preview-copy">
+              <p class="project-tag">SaaS</p>
+              <h3>Insights Dashboard</h3>
+              <p>Designed a dashboard for teams to understand customer behavior and operational health quickly.</p>
+            </div>
+          </article>
+
+          <article class="preview-card">
+            <div class="preview-visual preview-three" aria-hidden="true"></div>
+            <div class="preview-copy">
+              <p class="project-tag">Community</p>
+              <h3>Social Experience</h3>
+              <p>Created a community-driven platform focused on connection, trust, and participation.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-band" id="contact-cta" aria-labelledby="cta-title">
+        <div>
+          <p class="eyebrow">Let’s build</p>
+          <h2 id="cta-title">Need a thoughtful digital experience that feels premium and performs?</h2>
+        </div>
+        <a href="contact.html" class="btn primary">Start a Conversation</a>
+      </section>
     </main>
-</body>
+  </body>
 </html>
