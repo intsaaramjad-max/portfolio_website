@@ -1,50 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About the portfolio creator and their design and development expertise.">
     <title>Portfolio | About</title>
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/about.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <a href="index.html" class="logo">Port<span>folio</span>.</a>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="logo">Port<span>folio</span>.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
-    <main class="page-container">
-        <div class="about-content">
-            <div class="about-text">
-                <h1 class="page-title">About <span>Me</span></h1>
-                <p>Hello! I'm a passionate creator who loves merging code with design. I have a strong foundation in modern web technologies and a keen eye for aesthetics. My goal is to build digital products that are not only functional but also visually stunning and user-friendly.</p>
-                <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or enjoying a good cup of coffee.</p>
-                
-                <div class="skills-section">
-                    <h2>My Arsenal</h2>
-                    <div class="skills-grid">
-                        <div class="skill-tag">HTML5 & CSS3</div>
-                        <div class="skill-tag">JavaScript (ES6+)</div>
-                        <div class="skill-tag">React & Next.js</div>
-                        <div class="skill-tag">UI/UX Design</div>
-                        <div class="skill-tag">Figma</div>
-                        <div class="skill-tag">Tailwind CSS</div>
-                    </div>
-                </div>
+
+    <main class="page-container" id="about">
+      <section class="about-content" aria-labelledby="about-title">
+        <div class="about-text">
+          <p class="eyebrow">about me</p>
+          <h1 class="page-title" id="about-title">About <span>Me</span></h1>
+          <p>
+            I’m a multidisciplinary designer and developer focused on crafting digital experiences that feel both intuitive and memorable.
+            My work sits at the intersection of visual storytelling, front-end engineering, and product thinking.
+          </p>
+          <p>
+            I enjoy translating complex ideas into elegant interfaces, building systems that scale, and designing with empathy at the center.
+            Whether I’m refining a brand experience or building a product flow, I aim to create work that is clear, useful, and beautifully considered.
+          </p>
+          <p>
+            Outside of work, I stay curious through design research, new technologies, and creative experimentation—always looking for inspiration in the details.
+          </p>
+
+          <div class="stats-grid" aria-label="Profile summary">
+            <div class="stat-box">
+              <strong>6+</strong>
+              <span>Years crafting digital experiences</span>
             </div>
-            <div class="about-image-container">
-                <div class="about-image-placeholder">
-                    <!-- Placeholder for profile image -->
-                    <div class="image-inner">👨‍💻</div>
-                </div>
-                <div class="decoration-circle"></div>
+            <div class="stat-box">
+              <strong>30+</strong>
+              <span>Projects shipped across product and brand work</span>
             </div>
+          </div>
+
+          <div class="skills-section">
+            <h2>My toolkit</h2>
+            <div class="skills-grid" aria-label="Skills and technologies">
+              <div class="skill-tag">html5</div>
+              <div class="skill-tag">css3</div>
+              <div class="skill-tag">javascript</div>
+              <div class="skill-tag">react</div>
+              <div class="skill-tag">ux/ui design</div>
+              <div class="skill-tag">figma</div>
+              <div class="skill-tag">design systems</div>
+              <div class="skill-tag">accessibility</div>
+            </div>
+          </div>
         </div>
+
+        <div class="about-image-container" aria-label="Profile illustration">
+          <div class="about-image-placeholder" role="img" aria-label="Profile illustration placeholder">
+            <div class="image-inner">👨‍💻</div>
+          </div>
+          <div class="decoration-circle" aria-hidden="true"></div>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
